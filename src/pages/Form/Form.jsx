@@ -54,8 +54,8 @@ export default function Form() {
                 <form onSubmit={formik.handleSubmit} className='bg-white p-5 rounded-xl shadow-xl w-4/5 my-5 lg:w-3/4 overflow-y-scroll' >
                     <div className="grid gap-6 mb-6 md:grid-cols-2">
                         <div>
-                            <label htmlFor="name" className="block mb-2 text-sm font-medium text-gray-900 ">First name</label>
-                            <input type="text" id="name" onBlur={formik.handleBlur} onChange={formik.handleChange} value={formik.values.name} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="shafek" required />
+                            <label htmlFor="name" className="block mb-2 text-sm font-medium text-gray-900 ">Full name</label>
+                            <input type="text" id="name" onBlur={formik.handleBlur} onChange={formik.handleChange} value={formik.values.name} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="Youssef Mohammed Shafek" required />
                         </div>
                         <div>
                             <label htmlFor="phoneNumber" className="block mb-2 text-sm font-medium text-gray-900 ">Phone number</label>
