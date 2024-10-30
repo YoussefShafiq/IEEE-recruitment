@@ -44,14 +44,14 @@ export default function Form() {
     return <>
         <div className="bg-pattern min-h-screen ">
             <div className="container h-screen m-auto p-1 flex flex-col lg:flex-row justify-center items-center ">
-                <div className='flex flex-col items-center justify-center mb-3 ' >
+                <div className='flex flex-col items-center justify-center m-2 ' >
                     <img src={logo} className='w-14' alt="IEEE - Helwan logo" />
                     <h1 className="font-uni-sans-heavy text-primary text-3xl text-center">
                         IEEE - Helwan Recruitment
                     </h1>
                 </div>
 
-                <form onSubmit={formik.handleSubmit} className='bg-white p-5 rounded-xl shadow-xl w-4/5 my-5 lg:w-3/4' >
+                <form onSubmit={formik.handleSubmit} className='bg-white p-5 rounded-xl shadow-xl w-4/5 my-5 lg:w-3/4 overflow-y-scroll' >
                     <div className="grid gap-6 mb-6 md:grid-cols-2">
                         <div>
                             <label htmlFor="name" className="block mb-2 text-sm font-medium text-gray-900 ">First name</label>
