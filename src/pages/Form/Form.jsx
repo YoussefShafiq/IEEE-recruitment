@@ -68,15 +68,15 @@ export default function Form() {
                     </div>
                     <div className="grid gap-6 mb-6 md:grid-cols-3">
                         <div>
-                            <label htmlFor="university" className="block mb-2 text-sm font-medium text-gray-900 ">First name</label>
+                            <label htmlFor="university" className="block mb-2 text-sm font-medium text-gray-900 ">University</label>
                             <input type="text" id="university" onBlur={formik.handleBlur} onChange={formik.handleChange} value={formik.values.university} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="helwan" required />
                         </div>
                         <div>
-                            <label htmlFor="major" className="block mb-2 text-sm font-medium text-gray-900 ">Phone number</label>
-                            <input type="text" id="major" onBlur={formik.handleBlur} onChange={formik.handleChange} value={formik.values.major} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="CS" required />
+                            <label htmlFor="major" className="block mb-2 text-sm font-medium text-gray-900 ">Major</label>
+                            <input type="text" id="major" onBlur={formik.handleBlur} onChange={formik.handleChange} value={formik.values.major} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="IS" required />
                         </div>
                         <div>
-                            <label htmlFor="academicYear" className="block mb-2 text-sm font-medium text-gray-900 ">First name</label>
+                            <label htmlFor="academicYear" className="block mb-2 text-sm font-medium text-gray-900 ">Academic year</label>
                             <select id="academicYear" onBlur={formik.handleBlur} onChange={formik.handleChange} value={formik.values.academicYear} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required>
                                 <option value="">Select</option>
                                 <option value="1">1</option>
@@ -89,7 +89,7 @@ export default function Form() {
 
                     </div>
                     <div>
-                        <label htmlFor="preference" className="block mb-2 text-sm font-medium text-gray-900 ">Development</label>
+                        <label htmlFor="preference" className="block mb-2 text-sm font-medium text-gray-900 ">Preference</label>
                         <select id="preference" onBlur={formik.handleBlur} onChange={formik.handleChange} value={formik.values.preference} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required>
                             <option value="">Select an option</option>
                             <option value="Web Development">Web Development</option>
