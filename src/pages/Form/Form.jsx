@@ -54,29 +54,29 @@ export default function Form() {
                 <form onSubmit={formik.handleSubmit} className='bg-white p-5 rounded-xl shadow-xl w-4/5 my-5 lg:w-3/4' >
                     <div className="grid gap-6 mb-6 md:grid-cols-2">
                         <div>
-                            <label htmlFor="name" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">First name</label>
+                            <label htmlFor="name" className="block mb-2 text-sm font-medium text-gray-900 ">First name</label>
                             <input type="text" id="name" onBlur={formik.handleBlur} onChange={formik.handleChange} value={formik.values.name} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="shafek" required />
                         </div>
                         <div>
-                            <label htmlFor="phoneNumber" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Phone number</label>
+                            <label htmlFor="phoneNumber" className="block mb-2 text-sm font-medium text-gray-900 ">Phone number</label>
                             <input type="tel" id="phoneNumber" onBlur={formik.handleBlur} onChange={formik.handleChange} value={formik.values.phoneNumber} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="01234567890" required />
                         </div>
                     </div>
                     <div className="mb-6">
-                        <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email address</label>
+                        <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 ">Email address</label>
                         <input type="email" id="email" onBlur={formik.handleBlur} onChange={formik.handleChange} value={formik.values.email} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="shafek@gmail.com" required />
                     </div>
                     <div className="grid gap-6 mb-6 md:grid-cols-3">
                         <div>
-                            <label htmlFor="university" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">First name</label>
+                            <label htmlFor="university" className="block mb-2 text-sm font-medium text-gray-900 ">First name</label>
                             <input type="text" id="university" onBlur={formik.handleBlur} onChange={formik.handleChange} value={formik.values.university} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="helwan" required />
                         </div>
                         <div>
-                            <label htmlFor="major" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Phone number</label>
+                            <label htmlFor="major" className="block mb-2 text-sm font-medium text-gray-900 ">Phone number</label>
                             <input type="text" id="major" onBlur={formik.handleBlur} onChange={formik.handleChange} value={formik.values.major} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="CS" required />
                         </div>
                         <div>
-                            <label htmlFor="academicYear" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">First name</label>
+                            <label htmlFor="academicYear" className="block mb-2 text-sm font-medium text-gray-900 ">First name</label>
                             <select id="academicYear" onBlur={formik.handleBlur} onChange={formik.handleChange} value={formik.values.academicYear} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required>
                                 <option value="">Select</option>
                                 <option value="1">1</option>
@@ -89,7 +89,7 @@ export default function Form() {
 
                     </div>
                     <div>
-                        <label htmlFor="preference" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Development</label>
+                        <label htmlFor="preference" className="block mb-2 text-sm font-medium text-gray-900 ">Development</label>
                         <select id="preference" onBlur={formik.handleBlur} onChange={formik.handleChange} value={formik.values.preference} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required>
                             <option value="">Select an option</option>
                             <option value="Web Development">Web Development</option>
