@@ -4,8 +4,8 @@ import Navbar from './../Navbar/Navbar';
 
 export default function Layout() {
     return <>
-        <Navbar />
-        <div className="pt-20 md:pt-0 ">
+        <div className="py-4 min-h-screen bg-pattern space-y-4">
+            <Navbar />
             <Outlet></Outlet>
         </div>
     </>

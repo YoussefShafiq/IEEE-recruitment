@@ -36,9 +36,9 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="bg-primary fixed w-[90%] left-1/2 transform -translate-x-1/2 top-5 rounded-3xl z-50">
+      <nav className="bg-primary w-[90%] left-1/2 transform m-auto rounded-3xl z-50">
         <div className="px-5 flex flex-wrap items-center justify-end md:justify-between mx-auto p-3">
-          <Link to="" className="lg:w-[15%] absolute md:relative start-3 bg-blue flex items-center space-x-3">
+          <Link to="" className="lg:w-[15%] md:w-[25%] absolute md:relative start-3 bg-blue flex items-center space-x-3">
             <img src={logo} alt="IEEE logo" />
             <span className='font-uni-sans-heavy text-cyan-50 tracking-wide'>ieee helwan</span>
           </Link>
@@ -58,7 +58,7 @@ export default function Navbar() {
             </ul>
           </div>
 
-          <div className="lg:w-[13%] flex justify-end">
+          <div className="lg:w-[15%] md:w-[25%] flex justify-end">
             <DarkmodeToggle />
           </div>
           <button
