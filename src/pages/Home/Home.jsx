@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import logo from '../../assets/images/white logo.svg'
 import { NavLink } from 'react-router-dom'
 import timeoutImage from '../../assets/images/End of workday-bro.png'
+import soonimg from '../../assets/images/Writing room-pana.png'
 import interviewimage from '../../assets/images/Interview-bro.png'
 import { useCountdown } from '../../contexts/CountdownContext'
 
@@ -23,8 +24,16 @@ export default function Home() {
                                 IEEE - Helwan Recruitment
                             </h1>
                         </div>
-                        {end ? <>
-                            <div class="p-6 font-sans text-white drop-shadow-md ">
+                        {coming ? <>
+                            <div class="p-6 font-sans text-white drop-shadow-md w-full lg:w-1/4 ">
+                                <img src={soonimg} alt="" />
+                            </div>
+                        </> : <>
+                            {end ? <>
+                                <div class="p-6 font-sans text-white drop-shadow-md w-full lg:w-1/4 ">
+                                    <img src={timeoutImage} alt="" />
+                                </div>
+                            </> : <div class="p-6 font-sans text-white drop-shadow-md ">
                                 <p class="text-lg font-semibold mb-4">Hello!</p>
 
                                 <p class="text-justify py-1">
@@ -41,25 +50,7 @@ export default function Home() {
 
                                 <h2 class="mt-6 text-lg font-semibold">Best wishes,</h2>
                                 <h2 class="text-lg font-semibold">IEEE Team</h2>
-                            </div>
-                        </> : <div class="p-6 font-sans text-white drop-shadow-md ">
-                            <p class="text-lg font-semibold mb-4">Hello!</p>
-
-                            <p class="text-justify py-1">
-                                IEEE Helwan University is now recruiting new members! Join us to connect with like-minded peers, enhance your skills, and find your ideal field.
-                            </p>
-
-                            <p class="text-justify py-1">
-                                Whether you're looking to gain experience or join a supportive community, IEEE is here to guide you.
-                            </p>
-
-                            <p class="text-justify py-1">
-                                Don’t wait—click join below and secure your spot!
-                            </p>
-
-                            <h2 class="mt-6 text-lg font-semibold">Best wishes,</h2>
-                            <h2 class="text-lg font-semibold">IEEE Team</h2>
-                        </div>}
+                            </div>}</>}
                         <div>
                             {coming ? <>
                                 <h1 className="font-uni-sans-heavy text-white text-3xl text-center">
