@@ -117,3 +117,23 @@
     font-weight: 300;
     font-style: italic;
 }
+
+.active {
+    @apply opacity-100 scale-[1.05]
+}
+
+.loader-icon {
+    animation: spin 1s linear infinite;
+    font-size: 40px;
+    color: #3498db;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: 'class',
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
@@ -10,6 +11,7 @@ export default {
     extend: {
       backgroundImage: {
         'pattern': "url('/src/assets/images/BG.svg')",
+        'patternprimary': "url('/src/assets/images/BG primary.svg')",
         'wave': "url('/src/assets/images/wave.svg')",
         'gradient': "url('/src/assets/images/gradient.jpg')",
       },
