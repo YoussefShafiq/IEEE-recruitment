@@ -5,7 +5,7 @@ const CountdownContext = createContext();
 
 // Define the start and end dates
 const startDate = new Date('2024-10-01T00:00:00');
-const endDate = new Date('2024-12-01T00:00:00');
+const endDate = new Date('2026-12-01T00:00:00');
 
 // Helper function to calculate time left
 const calculateTimeLeft = () => {
